@@ -1,0 +1,87 @@
+
+.artist-details {
+  width: 100%;
+  max-width: 1200px;
+  margin: 32px auto;
+  color: #1e293b;
+}
+
+.artist-details-title {
+  margin: 0 0 24px;
+  font-size: 2rem;
+  overflow-wrap: anywhere;
+}
+
+.artist-details-info {
+  margin-bottom: 32px;
+}
+
+.artist-details-info p {
+  margin: 0 0 12px;
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.favorite-button {
+  margin: 8px 0 16px;
+  padding: 10px 18px;
+  border: 2px solid #d93652;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #d93652;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.favorite-button:hover:not(:disabled) {
+  background-color: #d93652;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.favorite-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.favorite-button:focus-visible {
+  outline: 3px solid #f3a0ae;
+  outline-offset: 3px;
+}
+
+.favorite-button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.artist-albums-title {
+  margin: 28px 0 16px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .artist-details {
+    margin: 16px auto;
+  }
+
+  .artist-details-title {
+    font-size: 1.7rem;
+  }
+
+  .artist-albums-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .favorite-button {
+    transition: none;
+  }
+
+  .favorite-button:hover:not(:disabled) {
+    transform: none;
+  }
+}

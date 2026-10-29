@@ -1,0 +1,16 @@
+
+.artists-page {
+  width: 100%;
+}
+
+.artists-page .page-title {
+  margin: 0 0 24px;
+  font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+  .artists-page .page-title {
+    margin-bottom: 18px;
+    font-size: 1.7rem;
+  }
+}

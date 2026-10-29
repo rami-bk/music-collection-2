@@ -1,0 +1,27 @@
+
+.favorite-albums-page {
+  width: 100%;
+  color: #1e293b;
+}
+
+.favorite-albums-page .page-title {
+  margin: 0 0 24px;
+  font-size: 2rem;
+}
+
+.no-favorites,
+.page-error {
+  margin: 16px 0;
+  line-height: 1.6;
+}
+
+.page-error {
+  color: #b91c1c;
+}
+
+@media (max-width: 600px) {
+  .favorite-albums-page .page-title {
+    margin-bottom: 18px;
+    font-size: 1.7rem;
+  }
+}

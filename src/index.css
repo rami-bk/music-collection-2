@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  min-width: 320px;
+  background-color: #e8e8e8;
+  color: #222222;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}

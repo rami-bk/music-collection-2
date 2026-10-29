@@ -1,0 +1,59 @@
+{
+  "albums": [
+    {
+      "id": "1",
+      "title": "Master of Puppets",
+      "artistId": "1",
+      "genre": "Thrash Metal",
+      "type": "Vinyl",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736976009675621c80cafa1ff5",
+      "isFavorite": false
+    },
+    {
+      "id": "2",
+      "title": "Ride the Lightning",
+      "artistId": "rCUH71GBkAo",
+      "genre": "Thrash Metal",
+      "type": "cd",
+      "image": "https://i.scdn.co/image/ab67616d0000b2739ad3e9959f48d513886b8933",
+      "isFavorite": false
+    },
+    {
+      "title": "Iron Maiden",
+      "genre": "Heavy Metal",
+      "type": "vinyl",
+      "image": "https://i.scdn.co/image/ab67616d0000b2730dda9c11454b9053d07f585a",
+      "artistId": "rCUH71GBkAo",
+      "isFavorite": false,
+      "id": "DRdvmO1TOI0"
+    }
+  ],
+  "artists": [
+    {
+      "id": "1",
+      "name": "Metallica",
+      "isFavorite": false
+    },
+    {
+      "name": "Megadeth",
+      "isFavorite": false,
+      "id": "Maevf-FwtHM"
+    },
+    {
+      "name": "Iron Maiden",
+      "isFavorite": true,
+      "id": "rCUH71GBkAo"
+    },
+    {
+      "name": "psodpaos",
+      "isFavorite": false,
+      "id": "0-RTptn-i4o"
+    },
+    {
+      "name": "Nam",
+      "isFavorite": false,
+      "id": "vZddhhlvweo"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -1,0 +1,35 @@
+
+.add-album-page {
+  width: 100%;
+  max-width: 800px;
+  margin: 32px auto;
+  color: #1e293b;
+}
+
+.add-album-page .page-title {
+  margin: 0 0 24px;
+  font-size: 2rem;
+}
+
+.add-album-form-container {
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 600px) {
+  .add-album-page {
+    margin: 16px auto;
+  }
+
+  .add-album-page .page-title {
+    margin-bottom: 18px;
+    font-size: 1.7rem;
+  }
+
+  .add-album-form-container {
+    padding: 16px;
+  }
+}

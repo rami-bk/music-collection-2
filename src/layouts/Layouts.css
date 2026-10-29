@@ -1,0 +1,15 @@
+
+.main-content {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  min-height: calc(100vh - 70px);
+  margin: 0 auto;
+  padding: 24px;
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    padding: 16px;
+  }
+}

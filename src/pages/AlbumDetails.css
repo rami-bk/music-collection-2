@@ -1,0 +1,125 @@
+
+.album-details {
+  width: 100%;
+  max-width: 1000px;
+  margin: 32px auto;
+  color: #1e293b;
+}
+
+.album-details-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.album-details-image {
+  display: block;
+  flex: 0 1 350px;
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.album-details-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.album-details-title {
+  margin: 0 0 20px;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.album-details-info p {
+  margin: 0 0 14px;
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.album-details-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.album-details-actions button {
+  padding: 10px 16px;
+  border: 2px solid #d93652;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #d93652;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.album-details-actions button:hover:not(:disabled) {
+  background-color: #d93652;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.album-details-actions button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.album-details-actions button:focus-visible {
+  outline: 3px solid #f3a0ae;
+  outline-offset: 3px;
+}
+
+.album-details-actions button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+@media (max-width: 700px) {
+  .album-details {
+    margin: 16px auto;
+  }
+
+  .album-details-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+    padding: 16px;
+  }
+
+  .album-details-image {
+    flex: none;
+    align-self: center;
+    max-width: 350px;
+  }
+
+  .album-details-title {
+    font-size: 1.5rem;
+  }
+
+  .album-details-actions {
+    gap: 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .album-details-actions button {
+    transition: none;
+  }
+
+  .album-details-actions button:hover:not(:disabled) {
+    transform: none;
+  }
+}
